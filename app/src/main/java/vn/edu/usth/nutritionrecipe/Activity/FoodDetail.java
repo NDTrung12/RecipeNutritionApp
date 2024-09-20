@@ -28,6 +28,7 @@ public class FoodDetail extends AppCompatActivity {
             //Retrieve food name, cooking time from the intent; Retrieve ingredients, description & image from resource ID
             String name = intent.getStringExtra("name");
             String time = intent.getStringExtra("time");
+            String calo = intent.getStringExtra("calories");
             int ingredients = intent.getIntExtra("ingredients",  R.string.maggiIngredients);
             int desc = intent.getIntExtra("desc", R.string.maggiDesc);
             int image = intent.getIntExtra("image", R.drawable.maggi);
